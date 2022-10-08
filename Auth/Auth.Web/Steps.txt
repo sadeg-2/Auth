@@ -1,0 +1,10 @@
+﻿to change the Identity User: 
+	- create a new Model to a new User with a new property and inhereted by Identity User
+	- change in DBContext the IdentityDbContext<User>
+	- change the stratup file by add 
+			services.AddIdentity<User,IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddRazorPages();
+	- in shared folder the file login partial edit the using statment
+		
