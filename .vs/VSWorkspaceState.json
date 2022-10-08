@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Auth",
+    "\\Auth\\Auth.Web",
+    "\\Auth\\Auth.Web\\ViewModel"
   ],
+  "SelectedNode": "\\Auth\\Auth.Web\\ViewModel\\CreateUserViewModel.cs",
   "PreviewInSolutionExplorer": false
 }

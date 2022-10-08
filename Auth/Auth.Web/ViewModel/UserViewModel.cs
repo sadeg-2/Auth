@@ -12,6 +12,7 @@ namespace Auth.Web.ViewModel
 
         public string Email { get; set; }
 
+
         public DateTime CreatedAt { get; set; }
 
 

@@ -1,4 +1,5 @@
 ﻿using Auth.Web.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -13,5 +14,7 @@ namespace Auth.Web.Data
             : base(options)
         {
         }
+
+        public DbSet<Test> Tests { get; set; }
     }
 }

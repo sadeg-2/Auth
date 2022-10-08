@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "B:\\Assemply Project\\Auth\\Auth.Web\\Auth.Web.csproj": {}
+    "B:\\Repos\\Auth\\Auth\\Auth.Web\\Auth.Web.csproj": {}
   },
   "projects": {
-    "B:\\Assemply Project\\Auth\\Auth.Web\\Auth.Web.csproj": {
+    "B:\\Repos\\Auth\\Auth\\Auth.Web\\Auth.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "B:\\Assemply Project\\Auth\\Auth.Web\\Auth.Web.csproj",
+        "projectUniqueName": "B:\\Repos\\Auth\\Auth\\Auth.Web\\Auth.Web.csproj",
         "projectName": "Auth.Web",
-        "projectPath": "B:\\Assemply Project\\Auth\\Auth.Web\\Auth.Web.csproj",
+        "projectPath": "B:\\Repos\\Auth\\Auth\\Auth.Web\\Auth.Web.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "B:\\Assemply Project\\Auth\\Auth.Web\\obj\\",
+        "outputPath": "B:\\Repos\\Auth\\Auth\\Auth.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,6 +59,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[5.0.17, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [

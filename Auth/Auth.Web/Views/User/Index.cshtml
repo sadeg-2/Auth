@@ -5,6 +5,7 @@
 
 <a href="~/User/Create" class="btn btn-primary">Add User</a>
 <br/>
+
 @if (Model.Any())
 {
 	<br />
@@ -15,6 +16,7 @@
 				<th>Email</th>
 				<th>Phone</th>
 				<th>Created Date</th>
+				<th>Operation</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -25,6 +27,9 @@
 					<th>@user.Email</th>
 					<th>@user.PhoneNumber</th>
 					<th>@user.CreatedAt.ToString("yyy/MM/dd")</th>
+					<th>
+						<a href="~/User/Delete/@user.Id" class="btn btn-danger">Delete</a>
+					</th>
 				</tr>
 			}
 		</tbody>

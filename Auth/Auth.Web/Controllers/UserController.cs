@@ -3,7 +3,9 @@ using Auth.Web.Models;
 using Auth.Web.ViewModel;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Auth.Web.Controllers
 {
@@ -30,6 +32,7 @@ namespace Auth.Web.Controllers
                     UserName = x.UserName ,
                 }).ToList();
 
+
             return View(users);
         }
 
@@ -41,11 +44,45 @@ namespace Auth.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(CreateUserViewModel input)
+        public async Task<IActionResult> Create(CreateUserViewModel input)
         {
             // email , phone , password
+            if (ModelState.IsValid)
+            {
+                // add user to db
+                var user = new User();
+                user.CreatedAt = DateTime.Now;
+                user.Email = input.Email;
+                user.PhoneNumber = input.Phone;
+                user.UserName = input.Email ;
+                user.PasswordHash = input.PassWord ;
+                
+                //TempData["m"] = user.Email + " " + user.UserName + " " + user.PhoneNumber ;
+               
+                
+                await userManager.CreateAsync(user, input.PassWord);
+                
+                // here i add as a original table
+                db.Users.Add(user);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+               
+            }
 
-            return View();
+            return View(input);
+        }
+
+        public IActionResult Delete(string id) { 
+        
+            var user = db.Users.SingleOrDefault(x => x.Id == id && !x.IsDeleted);
+            if (user == null) {
+                return NotFound();
+            }
+            user.IsDeleted = true;
+            db.Users.Update(user);
+            db.SaveChanges();
+            
+            return RedirectToAction("Index");
         }
     }
 }
