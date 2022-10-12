@@ -60,11 +60,17 @@ namespace Auth.Web.Controllers
                 //TempData["m"] = user.Email + " " + user.UserName + " " + user.PhoneNumber ;
                
                 
-                await userManager.CreateAsync(user, input.PassWord);
-                
+                var x = await userManager.CreateAsync(user, input.PassWord);
+                //if (x.Succeeded)
+                //{
+                //    TempData["m"] = "Succed";
+                //}
+                //else {
+                //    TempData["m"] = x.ToString();
+                //}
                 // here i add as a original table
-                db.Users.Add(user);
-                db.SaveChanges();
+                // db.Users.Add(user);
+                // db.SaveChanges();
                 return RedirectToAction("Index");
                
             }

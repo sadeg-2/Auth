@@ -3,8 +3,7 @@
     "",
     "\\Auth",
     "\\Auth\\Auth.Web",
-    "\\Auth\\Auth.Web\\ViewModel"
+    "\\Auth\\Auth.Web\\Controllers"
   ],
-  "SelectedNode": "\\Auth\\Auth.Web\\ViewModel\\CreateUserViewModel.cs",
   "PreviewInSolutionExplorer": false
 }
