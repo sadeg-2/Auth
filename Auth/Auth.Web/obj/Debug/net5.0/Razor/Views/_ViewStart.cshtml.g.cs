@@ -33,8 +33,15 @@ using Auth.Web.ViewModel;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "B:\Repos\Auth\Auth\Auth.Web\Views\_ViewImports.cshtml"
+using Auth.Web.Enums;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"15dbd5fd4bfd489ff02c7d8cf3f0072cb00e1016", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0553ba632c7c4d46cc14ae728f3cbc4279f2ae04", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable

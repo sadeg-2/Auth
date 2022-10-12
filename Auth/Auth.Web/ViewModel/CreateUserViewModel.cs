@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Auth.Web.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace Auth.Web.ViewModel
 {
@@ -13,13 +14,17 @@ namespace Auth.Web.ViewModel
 		[Phone]
         [Display(Name = "User Phone Number")]
 
-        public string Phone { get; set; }
+        public string PhoneNumber { get; set; }
 
         [Required] 
 		[DataType(DataType.Password)]
         [Display(Name = "User PassWord")]
 
         public string  PassWord { get; set; }
-	
+
+        [Required]
+        [Display(Name = "User Type")]
+        public UserType UserType { get; set; }
+
 	}
 }

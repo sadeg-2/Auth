@@ -19,14 +19,13 @@ namespace Auth.Web.Controllers
         {
             _logger = logger;
         }
-
-        
+        [Authorize(Roles = "Admin,Employee")]
         public IActionResult Index()
         {
             return View();
         }
 
-        [AllowAnonymous]
+        [Authorize(Roles = "Admin")]
         public IActionResult Privacy()
         {
             return View();

@@ -40,7 +40,7 @@ namespace Auth.Web
 
 
             services.AddRazorPages();
-
+            services.AddAutoMapper(typeof(Startup));
 
             services.AddControllersWithViews();
         }
@@ -71,7 +71,7 @@ namespace Auth.Web
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=User}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

@@ -33,8 +33,15 @@ using Auth.Web.ViewModel;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "B:\Repos\Auth\Auth\Auth.Web\Views\_ViewImports.cshtml"
+using Auth.Web.Enums;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6e5d3e034ae89b13ef10f7c7b5b86153a365bfea", @"/Views/User/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"15dbd5fd4bfd489ff02c7d8cf3f0072cb00e1016", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0553ba632c7c4d46cc14ae728f3cbc4279f2ae04", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_User_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<UserViewModel>>
     #nullable disable
@@ -67,7 +74,7 @@ using Auth.Web.ViewModel;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n<h1> System Users </h1>\r\n<hr>\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e5d3e034ae89b13ef10f7c7b5b86153a365bfea4324", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e5d3e034ae89b13ef10f7c7b5b86153a365bfea4481", async() => {
                 WriteLiteral("Add User");
             }
             );
@@ -133,7 +140,7 @@ using Auth.Web.ViewModel;
 #line hidden
 #nullable disable
             WriteLiteral("</th>\r\n\t\t\t\t\t<th>\r\n\t\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e5d3e034ae89b13ef10f7c7b5b86153a365bfea7174", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e5d3e034ae89b13ef10f7c7b5b86153a365bfea7331", async() => {
                 WriteLiteral("Delete");
             }
             );

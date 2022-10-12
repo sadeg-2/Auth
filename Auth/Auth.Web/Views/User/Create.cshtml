@@ -10,13 +10,20 @@
 		</div>
 
 		<div class="form-group">
-			<label class="control-label" asp-for="Phone"> </label>
-			<input class="form-control" asp-for="Phone" />
+			<label class="control-label" asp-for="PhoneNumber"> </label>
+			<input class="form-control" asp-for="PhoneNumber" />
 		</div>
 
 		<div class="form-group">
 			<label class="control-label" asp-for="PassWord"> </label>
 			<input class="form-control" asp-for="PassWord" />
+		</div>
+		<div class="form-group">
+			<label class="control-label" asp-for="PassWord"> </label>
+			<select class="form-control" asp-for="UserType" >
+				<option value="@UserType.Admin">Admin</option>
+				<option value="@UserType.Emloyee">Employee</option>
+			</select>
 		</div>
 		<input type="submit" value="Save" class="btn btn-primary" />
 		<a href="~/User/Index" class="btn btn-danger">Cancel</a>
